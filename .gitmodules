@@ -1,3 +1,3 @@
-[submodule "DBWriter"]
-	path = DBWriter
-	url = https://github.com/duducat531/DBWriter.git
+[submodule "DBInstance"]
+	path = DBInstance
+	url = https://github.com/duducat531/DBInstance.git

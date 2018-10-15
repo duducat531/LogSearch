@@ -1,12 +1,12 @@
 from kafka import KafkaConsumer
-from DBWriter.DBWriter import DBWriter
+from DBInstance.DBInstance import DBInstance
 
 topicName = 'ebay_metric'
 serverAddr = 'localhost:9092'
 
-dbWriter = DBWriter()
+dbInstance = DBInstance()
 
 consumer = KafkaConsumer(topicName)
 for logData in consumer:
     # save log to mysql
-    dbWriter.save(logData)
+    dbInstance.SaveToDB(logData)
