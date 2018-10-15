@@ -1,0 +1,3 @@
+[submodule "DBWriter"]
+	path = DBWriter
+	url = https://github.com/duducat531/DBWriter.git

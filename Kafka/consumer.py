@@ -1,5 +1,5 @@
 from kafka import KafkaConsumer
-from Sql.DBWriter import DBWriter
+from DBWriter.DBWriter import DBWriter
 
 topicName = 'ebay_metric'
 serverAddr = 'localhost:9092'
