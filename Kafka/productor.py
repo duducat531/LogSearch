@@ -1,6 +1,6 @@
 # MetricCollector
 from kafka import KafkaProducer
-
+import json
 
 
 topicName = 'ebay_log'
