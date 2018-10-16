@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 class LogSearch(object):
     def __init__(self):
-        self.dbIns = DBInstance()
+        self.dbIns = DBInstance("localhost", "wyn", "123456", "ebay_log")
 
     def ParseRawData(self, rows):
         # TODO
