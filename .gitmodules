@@ -1,3 +1,6 @@
 [submodule "DBInstance"]
 	path = DBInstance
 	url = https://github.com/duducat531/DBInstance.git
+[submodule "KafkaInstance"]
+	path = KafkaInstance
+	url = https://github.com/duducat531/KafkaInstance.git

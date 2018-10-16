@@ -11,13 +11,13 @@ class LogSearch(object):
         self.dbIns = DBInstance()
 
     def ParseRawData(self, rows):
-        pass
+        # TODO
+        return rows
 
     def SearchByCorrId(self, corrId):
-        sql = "SELECT * FROM log_item where corr_id = {0}".format(corrId)
-        # Fetch all the rows in a list of lists.
+        sql = "SELECT * FROM log_item where corr_id = {0} order by timestamp".format(corrId)
         results = self.dbIns.Execute(sql)
-        return results
+        return self.ParseRawData(results)
         # for row in results:
         #     print(row)
 
